@@ -1,9 +1,12 @@
 import axios from "axios";
 import swal from "sweetalert";
+import { API_URL } from "../api";
+axios.defaults.withCredentials = true;
+
 export const registerUser = (user) => async (dispatch) => {
   dispatch({ type: "USER_REGISTER_REQUEST" });
   try {
-    await axios.post("/api/users/register", user);
+    await axios.post(`${API_URL}/api/users/register`, user);
     dispatch({ type: "USER_REGISTER_SUCCESS" });
   } catch (error) {
     dispatch({ type: "USER_REGISTER_FAIL", payload: error });
@@ -31,7 +34,7 @@ export const logoutUser = () => (dispatch) => {
 export const getAllUsers = () => async (dispatch) => {
   dispatch({ type: "GET_USERS_REQUEST" });
   try {
-    const response = await axios.get("/api/users/getallusers");
+    const response = await axios.get(`${API_URL}/api/users/getallusers`);
     // console.log(response.data);
     dispatch({ type: "GET_USERS_SUCCESS", payload: response.data });
   } catch (err) {
@@ -41,7 +44,7 @@ export const getAllUsers = () => async (dispatch) => {
 
 export const deleteUser = (userid) => async (dispatch) => {
   try {
-    await axios.post("/api/users/deleteuser", { userid });
+    await axios.post(`${API_URL}/api/users/deleteuser`, { userid });
     swal("User Deleted Succss!", "success");
     window.location.reload();
     // console.log(res);
