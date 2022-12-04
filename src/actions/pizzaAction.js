@@ -1,7 +1,7 @@
 import axios from "axios";
+import swal from "sweetalert";
 import { API_URL } from "../api";
 axios.defaults.withCredentials = true;
-import swal from "sweetalert";
 export const getAllPizzas = () => async (dispatch) => {
   dispatch({ type: "GET_PIZZAS_REQUEST" });
   try {
