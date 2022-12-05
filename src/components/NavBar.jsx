@@ -51,7 +51,7 @@ const NavBar = () => {
               )}
 
               <LinkContainer to="/cart">
-                <Nav.Link><div className="d-inline-block">Cart</div> {cartState.cartItems.length}</Nav.Link>
+                <Nav.Link>{cartState.cartItems.length}</Nav.Link>
               </LinkContainer>
             </Nav>
           </Navbar.Collapse>
