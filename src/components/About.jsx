@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <Container style={{ marginTop: "50px" }}>
-        <h1>Whoe we are</h1>
+        <h1>Pizzas we make!</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi eveniet
           unde vel dignissimos. Cum minima iste quaerat sequi, eum aspernatur
@@ -67,7 +67,7 @@ const About = () => {
           </Col>
         </Row>
         <Row>
-          <h1>Our Cheif</h1>
+          <h1>Our Chefs</h1>
           <Col md={3}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
             libero adipisci aliquid veniam. Incidunt sequi nesciunt rerum
