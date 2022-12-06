@@ -9,7 +9,7 @@ const Contact = () => {
       <Container style={{ marginTop: "50px" }}>
         <Row>
           <Col md={6}>
-            <h1>Techinfo YT Pizza Shop</h1>
+            <h1>Mama Mia Pizzas!</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
               nostrum magni voluptatem perferendis dolorum nisi architecto
@@ -65,14 +65,14 @@ const Contact = () => {
                     <AiOutlineMail />
                   </td>
                   <td>Email</td>
-                  <td>Help@urdomain.com</td>
+                  <td>parmarsunny125@gmail.com</td>
                 </tr>
               </tbody>
             </Table>
           </Col>
           <Col md={6}>
             <Image
-              src="images/farmhouse.jpg"
+              src="https://picjumbo.com/wp-content/uploads/pizza-salami-vertical-1570x2353.jpg"
               style={{ width: "100%", height: "100%" }}
             />
           </Col>
